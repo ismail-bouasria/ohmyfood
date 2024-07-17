@@ -49,9 +49,45 @@ header .location {
   font-weight: 300;
 }
 
+.functioning {
+  padding: 20px;
+}
 .functioning__steps {
   display: flex;
   flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.functioning__steps div {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  background-color: #F3F3F3;
+  box-shadow: -1px 1px 15px 1px rgba(0, 0, 0, 0.15);
+  height: 72.5px;
+  width: 322.5px;
+  border-radius: 20px;
+  align-items: center;
+  position: relative;
+}
+.functioning__steps div span {
+  background-color: #9356DC;
+  width: 24px;
+  height: 24px;
+  color: white;
+  align-content: center;
+  text-align: center;
+  border-radius: 15px;
+  position: absolute;
+  left: -10px;
+}
+.functioning__steps div i {
+  font-size: 18px;
+  color: #7E7E7E;
+}
+.functioning__steps div:hover i {
+  color: #9356DC;
 }
 
 /*# sourceMappingURL=index.css.map */
