@@ -102,6 +102,6 @@ header {
 .functioning {
 
     &__steps{
-       d
+       @include flexWrap();
     }
 }
