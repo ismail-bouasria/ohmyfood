@@ -1,52 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
-.btn {
-  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-  border-radius: 25px;
-  border: none;
-  height: 50px;
-  padding: 15px;
-  color: white;
-  font-size: 16px;
-  font-weight: 500;
-  align-content: center;
-}
+/* Error: expected "{".
+ *     ,
+ * 105 |        d
+ *     |         ^
+ *     '
+ *   sass/index.scss 105:9  root stylesheet */
 
-body {
-  font-family: "Roboto", sans-serif;
-  margin: 0;
-  padding: 0;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: expected "{".\a     \2577 \a 105 \2502         d\a     \2502          ^\a     \2575 \a   sass/index.scss 105:9  root stylesheet';
 }
-
-header {
-  display: flex;
-  flex-direction: column;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-header .logo {
-  padding: 20px 10px 10px;
-}
-header .location {
-  align-items: center;
-  height: 50px;
-  background-color: #EAEAEA;
-  gap: 17px;
-  display: flex;
-  justify-content: center;
-  font-weight: bolder;
-  box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.1), 0px 4px 20px rgba(0, 0, 0, 0.4);
-}
-
-.reservation {
-  background-color: #EAEAEA;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  padding: 20px;
-}
-.reservation p {
-  font-weight: 300;
-}
-
-/*# sourceMappingURL=index.css.map */
