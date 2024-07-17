@@ -1,27 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
-body {
-  font-family: "Roboto", sans-serif;
-  margin: 0;
-  padding: 0;
-}
+/* Error: expected ";".
+ *    ,
+ * 39 |    color: white;
+ *    |         ^
+ *    '
+ *   sass/index.scss 39:9  root stylesheet */
 
-header {
-  flex-direction: column;
-  display: flex;
-  justify-content: center;
-  text-align: center;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: expected ";".\a    \2577 \a 39 \2502     color: white;\a    \2502          ^\a    \2575 \a   sass/index.scss 39:9  root stylesheet';
 }
-header .logo {
-  padding: 20px 10px 10px;
-}
-header .location {
-  align-items: center;
-  height: 50px;
-  background-color: #EAEAEA;
-  gap: 17px;
-  display: flex;
-  justify-content: center;
-  font-weight: bolder;
-}
-
-/*# sourceMappingURL=index.css.map */

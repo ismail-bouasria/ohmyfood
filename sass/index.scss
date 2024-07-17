@@ -1,5 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+/// Mixins ///
+
+@mixin flexCenter {
+   display: flex;
+   justify-content: center;
+
+}
+
+@mixin dirColumn {
+   display: flex;
+   flex-direction: column
+}
+
+@mixin gap ($var){
+   gap: $var ;
+}
+
+@mixin backgroundGradient { 
+   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+
+}
+
+/// Variables ///
+
+$main-bg-color: #EAEAEA;
+$center: center;
+
+
+// Button //
+
+.btn{
+   @include backgroundGradient();
+   border-radius: 25px;
+   border: none; 
+   height: 50px;
+   padding: 15px
+   color: white;
+   font-size: 16px;
+   font-weight: 500;
+   align-content: $center;
+
+}
+
+
 /// GÉNÉRALE ///
 
 body {
@@ -8,46 +52,43 @@ body {
    padding: 0;
 }
 
-/// MIXINS ///
-
-@mixin flexcenter {
-   display: flex;
-   justify-content: center;
-
-}
-
-@mixin dircolumn {
-   flex-direction: column
-}
-
-@mixin gap ($var){
-   gap: $var ;
-}
-
-/// VARIABLES ///
-
-$main-bg-color: #EAEAEA;
-$center: center;
 
 /// HEADER ///
 
 header {
-   @include dircolumn();
-   @include flexcenter();
+   @include dirColumn();
+   @include flexCenter();
    text-align: $center ;
 
-   .logo{
+   .logo {
      padding: 20px 10px 10px;
    }
 
-   .location{
+   .location {
       align-items: $center;
       height: 50px;
       background-color: $main-bg-color;
       @include gap(17px);
-      @include flexcenter();
+      @include flexCenter();
       font-weight: bolder;
+      box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.1),
+      0px 4px 20px rgba(0, 0, 0, 0.4);  
    }
 }
 
+/// MAIN ///
+
+.reservation {
+   background-color: $main-bg-color;
+   @include dirColumn();
+   text-align: $center;
+   padding: 20px ;
+
+   p { 
+      font-weight: 300;
+   }
+
+}
+
     
+  
