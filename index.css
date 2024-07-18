@@ -90,4 +90,31 @@ header .location {
   color: #9356DC;
 }
 
+.restaurants {
+  background-color: #F3F3F3;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+.restaurants__cards__card {
+  position: relative;
+  border-radius: 15px 0 0;
+}
+.restaurants__cards__card img {
+  width: 100%;
+  object-fit: cover;
+}
+.restaurants__cards__card::before {
+  position: absolute;
+  text-align: center;
+  content: "Nouveau";
+  height: 30px;
+  width: 90px;
+  right: 10px;
+  top: 10px;
+  color: #008766;
+  font-weight: 500;
+  background: #99E2D0;
+  align-content: center;
+}
+
 /*# sourceMappingURL=index.css.map */
