@@ -156,18 +156,48 @@ header {
 
    &__cards {
 
+       a {
+         text-decoration: none;
+      }
+
       &__card {
+         @include dirColumn();
+         @include gap(15px);
+         height: 251px;
          position: relative;
-         border-radius: 15px 0 0;
+         background-color: white;
+         border-radius: 15px;
+
          img {
             width: 100%;
+            height: 160px;
             object-fit: cover;
+            border-radius: 15px 15px 0 0;
          }
+         
+         [type='checkbox']{
+            position: absolute;
+
+         }
+
+         &--text{
+            color: black;
+            padding-left: 10px;
+            line-height: 1.5;
+
+            
+         }
+
+         &--title{
+           font-weight: bold;
+         }
+         
       }
 
       &__card::before {
          position: absolute;
          text-align: center;
+         border-radius: 3px;
          content: "Nouveau";
          height: 30px;
          width: 90px;
