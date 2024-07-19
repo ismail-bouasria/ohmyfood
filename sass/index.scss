@@ -99,9 +99,7 @@ header {
    p {
       font-weight: 300;
    }
-
 }
-
 
 /// SECTION RESERVATION ///
 
@@ -111,7 +109,7 @@ header {
    &__steps {
       @include flexWrap();
       @include flexCenter();
-      @include gap(20px);
+      @include gap(25px);
 
       div {
          @include flexCenter();
@@ -158,7 +156,7 @@ header {
 .restaurants {
    background-color: $main-bg-color;
    padding: 15px;
-  
+
 
    &__cards {
       @include flexWrap();
@@ -211,13 +209,13 @@ header {
          }
 
          /// ICONE COEUR ANIMÉE ///
-         
+
          &--heart {
             position: absolute;
             right: 20px;
             bottom: 33px;
 
-              label {
+            label {
                cursor: pointer;
                font-size: 1.5rem;
                color: black;
@@ -239,7 +237,7 @@ header {
                content: "\f004";
                font-family: "Font Awesome 5 Free";
                font-weight: 900;
-               background:linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+               background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
                background-clip: content-box;
                -webkit-background-clip: text;
                -webkit-text-fill-color: transparent;
@@ -253,19 +251,66 @@ header {
 
 /// FOOTER ///
 
-footer{
-  display: flex;
-  flex-wrap: wrap-reverse;
+footer {
+   display: flex;
+   flex-wrap: wrap-reverse;
    @include gap(16px);
    background-color: #303030;
    color: white;
    padding: 20px;
 
-  .footer__infos{
-  @include dirColumn();
-   flex-wrap: wrap;
-   @include gap(7px);
-   line-height: 1.5;
-  
-  }
+   .footer__infos {
+      @include dirColumn();
+      flex-wrap: wrap;
+      @include gap(7px);
+      line-height: 1.5;
+
+   }
+}
+
+/// MEDIA QUERIES ///
+/// 
+
+/* Media query pour tablettes */
+@media (min-width: 768px) {
+
+
+   /// SECTION RESTAURANTS ///
+   .restaurants {
+
+      &__cards {
+         justify-content: center;
+
+         a {
+            width: 45%;
+         }
+      }
+
+   }
+
+   /// FOOTER ///
+   
+   .footer__infos {
+      flex-direction: row !important;
+   }
+
+}
+
+/* Media query pour ordinateurs de bureau */
+@media (min-width: 1024px) {
+
+   /// SECTION RESERVATION ///
+   .functioning {
+      padding: 50px 180px 50px 180px;
+   }
+
+   /// SECTION RESTAURANTS ///
+   .restaurants {
+      padding: 20px 180px 20px 180px;
+      &__cards {
+         @include gap(100px);
+      }
+
+   }
+
 }
