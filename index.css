@@ -13,6 +13,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  width: 100%;
   margin: 0;
   padding: 0;
 }
@@ -92,13 +93,13 @@ header .location {
 
 .restaurants {
   background-color: #F3F3F3;
-  padding: 20px;
-  margin-bottom: 30px;
+  padding: 15px;
 }
 .restaurants__cards {
   display: flex;
   flex-wrap: wrap;
   gap: 18px;
+  margin-bottom: 30px;
 }
 .restaurants__cards a {
   width: 100%;
@@ -170,6 +171,22 @@ header .location {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transform: scale(1.1);
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  gap: 16px;
+  background-color: #303030;
+  color: white;
+  padding: 20px;
+}
+footer .footer__infos {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 7px;
+  line-height: 1.5;
 }
 
 /*# sourceMappingURL=index.css.map */
