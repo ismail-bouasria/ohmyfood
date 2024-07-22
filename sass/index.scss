@@ -260,7 +260,8 @@ footer {
    padding: 20px;
 
    .footer__infos {
-      @include dirColumn();
+      display: flex;
+      flex-direction: column;
       flex-wrap: wrap;
       @include gap(7px);
       line-height: 1.5;
@@ -276,6 +277,7 @@ footer {
 
 
    /// SECTION RESTAURANTS ///
+
    .restaurants {
 
       &__cards {
@@ -289,15 +291,21 @@ footer {
    }
 
    /// FOOTER ///
-   
+
+   footer {
+      justify-content: center;
+   }
+
    .footer__infos {
       flex-direction: row !important;
+
    }
+
 
 }
 
 /* Media query pour ordinateurs de bureau */
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
 
    /// SECTION RESERVATION ///
    .functioning {
@@ -307,10 +315,30 @@ footer {
    /// SECTION RESTAURANTS ///
    .restaurants {
       padding: 20px 180px 20px 180px;
+
       &__cards {
          @include gap(100px);
       }
 
    }
 
+   /// FOOTER ///
+
+   footer {
+      padding: 40px;
+      justify-content: end;
+
+   }
+
+   .footer__infos div:nth-child(3){
+      padding: 0 0 0 20px;
+   }
+
+   .footer__infos div:nth-child(4) {
+      padding: 0 20px 0 ;
+   }
+
+   svg {
+      padding: 0 30px 0 30px;
+   }
 }
