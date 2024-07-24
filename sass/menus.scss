@@ -1,12 +1,4 @@
 
-/// GÉNÉRALE ///
-
-body {
-   font-family: 'Roboto', sans-serif;
-   width: 100%;
-   margin: 0;
-   padding: 0;
-}
 
 
 /// HEADER ///
@@ -29,8 +21,8 @@ body {
 
 
 
-/// MEDIA QUERIES ///
-/// 
+/* MEDIA QUERIES */
+ 
 
 /* Media query pour tablettes */
 @media (min-width: 768px) {
@@ -48,12 +40,12 @@ body {
 /* Media query pour ordinateurs de bureau */
 @media (min-width: 1440px) {
 
-   /// SECTION RESERVATION ///
+   /** SECTION RESERVATION **/
   
 
-   /// SECTION RESTAURANTS ///
+   /** SECTION RESTAURANTS **/
   
-   /// FOOTER ///
+   /** FOOTER **/
 
   
 }
