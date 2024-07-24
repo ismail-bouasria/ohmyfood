@@ -6,7 +6,15 @@ header {
     text-align: $center ;
  
     .logo {
-       padding: 20px 10px 10px;
+      position: relative;
+      padding: 20px 10px 10px;
+
+      a {
+         position: absolute;
+         font-size: x-large;
+         left: 20px;
+         color:#353535;
+      }
     }
  
     .location {
