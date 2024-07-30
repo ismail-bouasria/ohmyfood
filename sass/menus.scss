@@ -6,19 +6,22 @@
 
 // Import component styles
 @import './components/buttons.scss';
-// @import './components/animations.scss';
 
 // Import layout styles
 @import './layout/header.scss';
 @import './layout/footer.scss';
 
 
-
 /**** MAIN ****/
 
 main {
 
-    position: relative;
+    background-color: $main-bg-color;
+
+}
+
+.container__Menu {
+
 
     div img {
 
@@ -26,13 +29,52 @@ main {
         width: 100%;
         object-fit: cover;
     }
+
+    h1 {
+        font-family: 'Shrikhand', cursive;
+        font-weight: lighter;
+        font-size: 28px;
+    }
+
+    // ANIMATION COEUR //
+    @import './components/animations.scss';
+
 }
 
-.container__Menu {
-    h1{ font-family: 'Shrikhand', cursive;}
-    position :absolute;
+.menu__content {
     background-color: $main-bg-color;
+    position: relative;
+    padding: 10px;
+    bottom: 65px;
+    border-radius: 25px 25px 0 0;
 
-    width: 100%;
+    &__list {
+        &--title {
+            font-weight: 300;
+        }
 
+        &--title::after {
+            content: '';
+            display: block;
+            width: 40px;
+            height: 3px;
+            background-color: #99E2D0;
+            position: absolute;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            padding: 0;
+        }
+
+        li {
+            background-color: white;
+            border-radius: 15px;
+            padding: 15px;
+            box-shadow: 0px 4.01px 15.04px 0px #0000001A;
+        }
+    }
 }

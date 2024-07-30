@@ -21,20 +21,42 @@
     </header>
     <main>
 
-        <div>
-            <img src="../assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="la palette du goût">
-        </div>
+        <div class="container__Menu">
 
-         <div class="container__Menu">
-            
-            <h1> La palette du goût </h1>
-
-         </div>
-       
-             test  <div class="restaurants__cards__card--heart">
-                <input type="checkbox" id="heartCheckbox2">
-                <label for="heartCheckbox2"></label>
+            <div>
+                <img src="../assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                    alt="la palette du goût">
             </div>
+
+            <section class="menu__content">
+
+                <h1> La palette du goût </h1>
+                <div class="container__Menu--heart">
+                    <input type="checkbox" id="heartCheckbox2">
+                    <label for="heartCheckbox2"></label>
+                </div>
+
+                <div class="menu__content__list">
+                    <span class="menu__content__list--title">ENTRÉES</span>
+                    <ul>
+                        <li class="meal-item">
+                            <input type="checkbox" id="meal1" name="meal" value="Pizza">
+                            <label for="meal1">Pizza</label>
+                        </li>
+                        <li class="meal-item">
+                            <input type="checkbox" id="meal2" name="meal" value="Sushi">
+                            <label for="meal2">Sushi</label>
+                        </li>
+                        <li class="meal-item">
+                            <input type="checkbox" id="meal3" name="meal" value="Burger">
+                            <label for="meal3">Burger</label>
+                        </li>
+                    </ul>
+                </div>
+             
+            </section>
+
+        </div>
     </main>
     <footer>
         <div class="footer__infos">
