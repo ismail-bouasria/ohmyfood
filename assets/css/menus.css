@@ -145,6 +145,11 @@ main {
   right: 14px;
   top: 41px;
 }
+@media (min-width: 375px) {
+  .container__Menu--heart {
+    right: 30px;
+  }
+}
 
 .menu__content {
   background-color: #F3F3F3;
