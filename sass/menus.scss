@@ -39,6 +39,11 @@ main {
     // ANIMATION COEUR //
     @import './components/animations.scss';
 
+    &--heart{
+        right: 14px;
+        top: 41px;
+    }
+
 }
 
 .menu__content {
@@ -71,10 +76,48 @@ main {
         }
 
         li {
+
             background-color: white;
             border-radius: 15px;
             padding: 15px;
             box-shadow: 0px 4.01px 15.04px 0px #0000001A;
+            display: flex;
+            justify-content: space-between;
+            position:relative;  
+            
+        }
+
+        [type='checkbox'] {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            appearance: none;
+            cursor: pointer;
+        }
+
+        [type="checkbox"]:checked + &--price {
+            background: yellow;
+          }
+
+        &--name{
+            line-height: 1.5;
+
+            div:nth-child(1) {
+                font-weight: bold;
+            }
+
+            div:nth-child(2) {
+                font-weight: 300;
+            }
+
+        }
+
+        &--price{
+            font-weight: bold;
+
+            align-content: end;
         }
     }
 }

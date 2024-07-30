@@ -141,6 +141,10 @@ main {
   -webkit-text-fill-color: transparent;
   transform: scale(1.1);
 }
+.container__Menu--heart {
+  right: 14px;
+  top: 41px;
+}
 
 .menu__content {
   background-color: #F3F3F3;
@@ -172,6 +176,34 @@ main {
   border-radius: 15px;
   padding: 15px;
   box-shadow: 0px 4.01px 15.04px 0px rgba(0, 0, 0, 0.1019607843);
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.menu__content__list [type=checkbox] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  appearance: none;
+  cursor: pointer;
+}
+[type=checkbox]:checked + .menu__content__list--price {
+  background: yellow;
+}
+.menu__content__list--name {
+  line-height: 1.5;
+}
+.menu__content__list--name div:nth-child(1) {
+  font-weight: bold;
+}
+.menu__content__list--name div:nth-child(2) {
+  font-weight: 300;
+}
+.menu__content__list--price {
+  font-weight: bold;
+  align-content: end;
 }
 
 /*# sourceMappingURL=menus.css.map */
