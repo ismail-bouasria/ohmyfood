@@ -1,5 +1,6 @@
 /** IMPORT DU FONT FAMILY **/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 /** BODY **/
 body {
   font-family: "Roboto", sans-serif;
@@ -93,6 +94,25 @@ footer .footer__infos a {
   footer svg {
     padding: 0 30px 0 30px;
   }
+}
+
+/**** MAIN ****/
+main {
+  position: relative;
+}
+main div img {
+  height: 275px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.container__Menu {
+  position: absolute;
+  background-color: #F3F3F3;
+  width: 100%;
+}
+.container__Menu h1 {
+  font-family: "Shrikhand", cursive;
 }
 
 /*# sourceMappingURL=menus.css.map */
