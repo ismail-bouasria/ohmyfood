@@ -179,11 +179,46 @@ main {
 .menu__content__list li {
   background-color: white;
   border-radius: 15px;
-  padding: 15px;
+  height: 72px;
   box-shadow: 0px 4.01px 15.04px 0px rgba(0, 0, 0, 0.1019607843);
   display: flex;
   justify-content: space-between;
   position: relative;
+}
+.menu__content__list--name {
+  line-height: 1.5;
+  align-content: center;
+  margin-left: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu__content__list--name div:nth-child(1) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: bold;
+}
+.menu__content__list--name div:nth-child(2) {
+  font-weight: 300;
+}
+.menu__content__list--right {
+  display: flex;
+}
+.menu__content__list--price {
+  font-weight: bold;
+  align-content: end;
+  margin: 13px;
+}
+.menu__content__list--check {
+  background-color: #99E2D0;
+  text-align: center;
+  color: white;
+  align-content: center;
+  border-radius: 0px 15px 15px 0px;
+  width: 60px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 1000ms;
+  display: none;
 }
 .menu__content__list [type=checkbox] {
   position: absolute;
@@ -194,21 +229,12 @@ main {
   appearance: none;
   cursor: pointer;
 }
-[type=checkbox]:checked + .menu__content__list--price {
-  background: yellow;
+[type=checkbox]:checked + .menu__content__list--check {
+  transform: scaleX(1);
+  display: block;
 }
-.menu__content__list--name {
-  line-height: 1.5;
-}
-.menu__content__list--name div:nth-child(1) {
-  font-weight: bold;
-}
-.menu__content__list--name div:nth-child(2) {
-  font-weight: 300;
-}
-.menu__content__list--price {
-  font-weight: bold;
-  align-content: end;
+[type=checkbox]:checked:hover + .menu__content__list--check {
+  display: block;
 }
 
 /*# sourceMappingURL=menus.css.map */

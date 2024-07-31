@@ -84,13 +84,59 @@ main {
 
             background-color: white;
             border-radius: 15px;
-            padding: 15px;
+            height: 72px;
             box-shadow: 0px 4.01px 15.04px 0px #0000001A;
             display: flex;
             justify-content: space-between;
             position: relative;
 
         }
+
+
+
+        &--name {
+            line-height: 1.5;
+            align-content: center;
+            margin-left: 15px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+            div:nth-child(1) {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                font-weight: bold;
+            }
+
+            div:nth-child(2) {
+                font-weight: 300;
+            }
+        }
+
+        &--right {
+            display: flex;
+        }
+
+        &--price {
+            font-weight: bold;
+            align-content: end;
+            margin: 13px;
+
+        }
+
+        &--check {
+            background-color: #99E2D0;
+            text-align: center;
+            color: white;
+            align-content: center;
+            border-radius: 0px 15px 15px 0px;
+            width: 60px;
+            transform-origin: right;
+            transform: scaleX(0);
+            transition: transform 1000ms;
+            display: none;
+        }
+
+
 
         [type='checkbox'] {
             position: absolute;
@@ -102,27 +148,16 @@ main {
             cursor: pointer;
         }
 
-        [type="checkbox"]:checked+&--price {
-            background: yellow;
+        [type="checkbox"]:checked + &--check {
+            transform: scaleX(1);
+            display: block;
         }
 
-        &--name {
-            line-height: 1.5;
-
-            div:nth-child(1) {
-                font-weight: bold;
-            }
-
-            div:nth-child(2) {
-                font-weight: 300;
-            }
-
+        [type="checkbox"]:checked:hover + &--check {
+          
+            display: block;
         }
 
-        &--price {
-            font-weight: bold;
-
-            align-content: end;
-        }
+       
     }
 }
