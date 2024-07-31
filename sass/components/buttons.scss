@@ -2,13 +2,15 @@
 
 .btn {
     @include backgroundGradient();
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
     border-radius: 25px;
     border: none;
+    width: 217px;
     height: 50px;
     padding: 15px;
     color: white;
     font-size: 16px;
     font-weight: 500;
+    cursor: pointer;
     align-content: $center;
- 
  }

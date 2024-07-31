@@ -1,4 +1,3 @@
-
 // Import base styles
 @import './base/base.scss';
 // Import utility styles
@@ -22,151 +21,151 @@
 /** SECTION RESERVATION **/
 
 .reservation {
-   background-color: $main-bg-color;
-   @include dirColumn();
-   text-align: $center;
-   padding: 20px;
+    background-color: $main-bg-color;
+    @include dirColumn();
+    text-align: $center;
+    padding: 20px; 
 
-   p {
-      font-weight: 300;
-   }
+    p {
+        font-weight: 300;
+    }
 }
 
 /** SECTION FONCTIONNEMENT **/
 
 .functioning {
-   padding: 20px;
+    padding: 20px;
 
-   &__steps {
-      @include flexWrap();
-      @include flexCenter();
-      @include gap(25px);
+    &__steps {
+        @include flexWrap();
+        @include flexCenter();
+        @include gap(25px);
 
-      div {
-         @include flexCenter();
-         @include gap(15px);
-         background-color: $main-bg-color;
-         box-shadow: -1px 1px 15px 1px rgba(0, 0, 0, 0.15);
-         height: 72.5px;
-         width: 322.5px;
-         border-radius: 20px;
-         align-items: $center;
-         position: relative;
+        div {
+            @include flexCenter();
+            @include gap(15px);
+            background-color: $main-bg-color;
+            box-shadow: -1px 1px 15px 1px rgba(0, 0, 0, 0.15);
+            height: 72.5px;
+            width: 322.5px;
+            border-radius: 20px;
+            align-items: $center;
+            position: relative;
 
-         span {
-            background-color: #9356DC;
-            width: 24px;
-            height: 24px;
-            color: white;
-            align-content: center;
-            text-align: $center;
-            border-radius: 15px;
-            position: absolute;
-            left: -10px;
-         }
+            span {
+                background-color: #9356DC;
+                width: 24px;
+                height: 24px;
+                color: white;
+                align-content: center;
+                text-align: $center;
+                border-radius: 15px;
+                position: absolute;
+                left: -10px;
+            }
 
-         i {
-            font-size: 18px;
-            color: #7E7E7E;
-            ;
-         }
+            i {
+                font-size: 18px;
+                color: #7E7E7E;
+                ;
+            }
 
-      }
+        }
 
-      div:hover {
-         i {
-            color: #9356DC;
+        div:hover {
+            i {
+                color: #9356DC;
 
-         }
-      }
-   }
+            }
+        }
+    }
 
-   /* Media query pour ordinateurs de bureau */
-   @media (min-width: 1440px) {
-      padding: 50px 180px 50px 180px;
+    /* Media query pour ordinateurs de bureau */
+    @media (min-width: 1440px) {
+        padding: 50px 180px 50px 180px;
 
 
-   }
+    }
 }
 
 /** SECTION RESTAURANTS **/
 
 .restaurants {
-   background-color: $main-bg-color;
-   padding: 15px;
+    background-color: $main-bg-color;
+    padding: 15px;
 
-   /** CARDS **/
-   &__cards {
-       @include flexWrap();
-       @include gap(18px);
-       margin-bottom: 30px;
+    /** CARDS **/
+    &__cards {
+        @include flexWrap();
+        @include gap(18px);
+        margin-bottom: 30px;
 
-       a {
-           width: 100%;
-           text-decoration: none;
-       }
+        a {
+            width: 100%;
+            text-decoration: none;
+        }
 
-       &__card {
-           @include dirColumn();
-           @include gap(15px);
-           height: 251px;
-           position: relative;
-           background-color: white;
-           border-radius: 15px;
+        &__card {
+            @include dirColumn();
+            @include gap(15px);
+            height: 251px;
+            position: relative;
+            background-color: white;
+            border-radius: 15px;
 
-           &--new::before {
-               position: absolute;
-               text-align: center;
-               border-radius: 3px;
-               content: "Nouveau";
-               height: 30px;
-               width: 90px;
-               right: 10px;
-               top: 10px;
-               color: #008766;
-               font-weight: 500;
-               background: #99E2D0;
-               align-content: center;
-           }
+            &--new::before {
+                position: absolute;
+                text-align: center;
+                border-radius: 3px;
+                content: "Nouveau";
+                height: 30px;
+                width: 90px;
+                right: 10px;
+                top: 10px;
+                color: #008766;
+                font-weight: 500;
+                background: #99E2D0;
+                align-content: center;
+            }
 
-           img {
-               width: 100%;
-               height: 160px;
-               object-fit: cover;
-               border-radius: 15px 15px 0 0;
-           }
+            img {
+                width: 100%;
+                height: 160px;
+                object-fit: cover;
+                border-radius: 15px 15px 0 0;
+            }
 
-           &--text {
-               color: black;
-               padding-left: 10px;
-               line-height: 1.5;
-           }
+            &--text {
+                color: black;
+                padding-left: 10px;
+                line-height: 1.5;
+            }
 
-           &--title {
-               font-weight: bold;
-           }
+            &--title {
+                font-weight: bold;
+            }
 
-           @import './components/heartAnimation.scss';
-       }
-   }
+            @import './components/heartAnimation.scss';
+        }
+    }
 
-   // Media query pour tablettes 
-   @media (min-width: 768px) {
-       &__cards {
-           justify-content: center;
+    // Media query pour tablettes 
+    @media (min-width: 768px) {
+        &__cards {
+            justify-content: center;
 
-           a {
-               width: 45%;
-           }
-       }
-   }
+            a {
+                width: 45%;
+            }
+        }
+    }
 
-   // Media query pour ordinateurs de bureau 
-   @media (min-width: 1440px) {
-       padding: 20px 180px 20px 180px;
+    // Media query pour ordinateurs de bureau 
+    @media (min-width: 1440px) {
+        padding: 20px 180px 20px 180px;
 
-       &__cards {
-           @include gap(100px);
-       }
-   }
+        &__cards {
+            @include gap(100px);
+        }
+    }
 }

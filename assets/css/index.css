@@ -1,5 +1,6 @@
 /** IMPORT DU FONT FAMILY **/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 /** BODY **/
 body {
   font-family: "Roboto", sans-serif;
@@ -12,14 +13,17 @@ body {
 /** MIXINS **/
 /** Buttons **/
 .btn {
-  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background: linear-gradient(180deg, #ff79da, #9356dc);
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
   border-radius: 25px;
   border: none;
+  width: 217px;
   height: 50px;
   padding: 15px;
   color: white;
   font-size: 16px;
   font-weight: 500;
+  cursor: pointer;
   align-content: center;
 }
 
@@ -239,7 +243,7 @@ header .location {
 }
 .restaurants__cards__card--heart {
   position: absolute;
-  right: 20px;
+  right: 27px;
   bottom: 33px;
 }
 .restaurants__cards__card--heart label {
