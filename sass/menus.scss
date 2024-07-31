@@ -15,15 +15,15 @@
 /**** MAIN ****/
 .container__menu {
     background-color: $main-bg-color;
-    div img {
 
+    div img {
         height: 275px;
         width: 100%;
         object-fit: cover;
     }
 
     @media (min-width: 1024px) {
-        align-items:center ;
+        align-items: center;
 
     }
 }
@@ -34,6 +34,7 @@
     padding: 10px;
     bottom: 65px;
     border-radius: 25px 25px 0 0;
+
     h1 {
         font-family: 'Shrikhand', cursive;
         font-weight: lighter;
@@ -90,21 +91,27 @@
             line-height: 1.5;
             align-content: center;
             margin-left: 15px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
 
             div:nth-child(1) {
+                font-weight: bold;
                 overflow: hidden;
                 text-overflow: ellipsis;
-                font-weight: bold;
 
             }
 
             div:nth-child(2) {
-                font-weight: 300;
                 overflow: hidden;
+                font-size: 15px;
+                font-weight: 300;
                 text-overflow: ellipsis;
-               
+
             }
         }
+
         &--right {
             display: flex;
         }
@@ -117,7 +124,6 @@
         }
 
         // CHECK ANIMATION
-
         @import '../sass/components/checkAnimation.scss';
 
     }

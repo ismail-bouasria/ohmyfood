@@ -196,15 +196,19 @@ footer .footer__infos a {
   line-height: 1.5;
   align-content: center;
   margin-left: 15px;
-}
-.menu__content__list--name div:nth-child(1) {
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+.menu__content__list--name div:nth-child(1) {
   font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu__content__list--name div:nth-child(2) {
-  font-weight: 300;
   overflow: hidden;
+  font-size: 15px;
+  font-weight: 300;
   text-overflow: ellipsis;
 }
 .menu__content__list--right {
