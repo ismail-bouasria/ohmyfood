@@ -13,16 +13,8 @@
 
 
 /**** MAIN ****/
-
-main {
-
+.container__menu {
     background-color: $main-bg-color;
-
-}
-
-.container__Menu {
-
-
     div img {
 
         height: 275px;
@@ -30,6 +22,18 @@ main {
         object-fit: cover;
     }
 
+    @media (min-width: 1024px) {
+        align-items:center ;
+
+    }
+}
+
+.menu__content {
+    background-color: $main-bg-color;
+    position: relative;
+    padding: 10px;
+    bottom: 65px;
+    border-radius: 25px 25px 0 0;
     h1 {
         font-family: 'Shrikhand', cursive;
         font-weight: lighter;
@@ -37,7 +41,7 @@ main {
     }
 
     // ANIMATION COEUR //
-    @import './components/animations.scss';
+    @import './components/heartAnimation.scss';
 
     &--heart {
         right: 14px;
@@ -48,15 +52,6 @@ main {
 
         }
     }
-
-}
-
-.menu__content {
-    background-color: $main-bg-color;
-    position: relative;
-    padding: 10px;
-    bottom: 65px;
-    border-radius: 25px 25px 0 0;
 
     &__list {
         &--title {
@@ -89,29 +84,27 @@ main {
             display: flex;
             justify-content: space-between;
             position: relative;
-
         }
-
-
 
         &--name {
             line-height: 1.5;
             align-content: center;
             margin-left: 15px;
-            overflow: hidden;
-            text-overflow: ellipsis;
 
             div:nth-child(1) {
                 overflow: hidden;
                 text-overflow: ellipsis;
                 font-weight: bold;
+
             }
 
             div:nth-child(2) {
                 font-weight: 300;
+                overflow: hidden;
+                text-overflow: ellipsis;
+               
             }
         }
-
         &--right {
             display: flex;
         }
@@ -123,41 +116,9 @@ main {
 
         }
 
-        &--check {
-            background-color: #99E2D0;
-            text-align: center;
-            color: white;
-            align-content: center;
-            border-radius: 0px 15px 15px 0px;
-            width: 60px;
-            transform-origin: right;
-            transform: scaleX(0);
-            transition: transform 1000ms;
-            display: none;
-        }
+        // CHECK ANIMATION
 
+        @import '../sass/components/checkAnimation.scss';
 
-
-        [type='checkbox'] {
-            position: absolute;
-            top: 0;
-            left: 0;
-            bottom: 0;
-            right: 0;
-            appearance: none;
-            cursor: pointer;
-        }
-
-        [type="checkbox"]:checked + &--check {
-            transform: scaleX(1);
-            display: block;
-        }
-
-        [type="checkbox"]:checked:hover + &--check {
-          
-            display: block;
-        }
-
-       
     }
 }
