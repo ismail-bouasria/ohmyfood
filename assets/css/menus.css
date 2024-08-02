@@ -266,5 +266,9 @@ footer .footer__infos a {
 [type=checkbox]:checked + .menu__content__list--check {
   display: block;
 }
+.menu__content--button {
+  display: contents;
+  justify-content: center;
+}
 
 /*# sourceMappingURL=menus.css.map */

@@ -127,4 +127,9 @@
         @import '../sass/components/checkAnimation.scss';
 
     }
+
+    &--button {
+        display:contents;
+        justify-content: center;
+    }
 }
