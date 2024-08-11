@@ -25,6 +25,11 @@ body {
   font-weight: 500;
   cursor: pointer;
   align-content: center;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.btn:hover {
+  filter: brightness(1.1);
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.5);
 }
 
 /** HEADER **/
