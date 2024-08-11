@@ -15,7 +15,7 @@
 /**** MAIN ****/
 .container__menu {
     background-color: $main-bg-color;
-        
+    margin-bottom: -35px;
     div img {
         height: 275px;
         width: 100%;
@@ -114,6 +114,8 @@
 
         &--right {
             display: flex;
+            overflow: hidden;
+            border-radius: 0px 15px 15px 0px;
         }
 
         &--price {
@@ -129,7 +131,7 @@
     }
 
     &--button {
-        display:contents;
-        justify-content: center;
+        text-align: center;
+        margin-top: 35px;
     }
 }

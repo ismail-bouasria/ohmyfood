@@ -102,6 +102,7 @@ footer .footer__infos a {
 /**** MAIN ****/
 .container__menu {
   background-color: #F3F3F3;
+  margin-bottom: -35px;
 }
 .container__menu div img {
   height: 275px;
@@ -216,6 +217,8 @@ footer .footer__infos a {
 }
 .menu__content__list--right {
   display: flex;
+  overflow: hidden;
+  border-radius: 0px 15px 15px 0px;
 }
 .menu__content__list--price {
   font-weight: bold;
@@ -267,8 +270,8 @@ footer .footer__infos a {
   display: block;
 }
 .menu__content--button {
-  display: contents;
-  justify-content: center;
+  text-align: center;
+  margin-top: 35px;
 }
 
 /*# sourceMappingURL=menus.css.map */
