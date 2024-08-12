@@ -17,7 +17,7 @@ body {
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
   border-radius: 25px;
   border: none;
-  width: 217px;
+  width: 217px !important;
   height: 50px;
   padding: 15px;
   color: white;
@@ -117,6 +117,13 @@ footer .footer__infos a {
 @media (min-width: 1024px) {
   .container__menu {
     align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin-bottom: -65px;
+  }
+  .container__menu :nth-child(1) {
+    width: 100%;
   }
 }
 
@@ -126,11 +133,17 @@ footer .footer__infos a {
   padding: 10px;
   bottom: 65px;
   border-radius: 25px 25px 0 0;
+  /** MEDIA QUERIES **/
 }
 .menu__content h1 {
   font-family: "Shrikhand", cursive;
   font-weight: lighter;
   font-size: 28px;
+}
+@media (min-width: 375px) {
+  .menu__content h1 {
+    text-align: center;
+  }
 }
 .menu__content--heart {
   position: absolute;
@@ -168,11 +181,23 @@ footer .footer__infos a {
 }
 @media (min-width: 375px) {
   .menu__content--heart {
-    right: 30px;
+    right: 20px;
+    top: 39px;
+  }
+}
+@media (min-width: 1024px) {
+  .menu__content--heart {
+    right: 190px;
+    top: 20px;
   }
 }
 .menu__content__list {
   /** CHECK ANIMATION **/
+}
+@media (min-width: 1024px) {
+  .menu__content__list {
+    padding: 20px 150px 0 150px;
+  }
 }
 .menu__content__list--title {
   font-weight: 300;
@@ -300,9 +325,19 @@ footer .footer__infos a {
 [type=checkbox]:checked + .menu__content__list--check {
   display: block;
 }
-.menu__content__list .menu__content--button {
+.menu__content--button {
   text-align: center;
   margin-top: 35px;
+}
+@media (min-width: 1024px) {
+  .menu__content--button {
+    padding: 10px 0 30px;
+  }
+}
+@media (min-width: 1024px) {
+  .menu__content {
+    width: 73%;
+  }
 }
 
 /*# sourceMappingURL=menus.css.map */

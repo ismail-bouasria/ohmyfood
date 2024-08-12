@@ -25,7 +25,14 @@
 
     @media (min-width: 1024px) {
         align-items: center;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        margin-bottom: -65px;
 
+        :nth-child(1) {
+            width: 100%;
+        }
     }
 }
 
@@ -40,6 +47,11 @@
         font-family: 'Shrikhand', cursive;
         font-weight: lighter;
         font-size: 28px;
+
+        @media (min-width: 375px) {
+            text-align: center;
+
+        }
     }
 
     // ANIMATION COEUR //
@@ -50,13 +62,23 @@
         top: 41px;
 
         @media (min-width: 375px) {
-            right: 30px;
+            right: 20px;
+            top: 39px;
+
+        }
+
+        @media (min-width: 1024px) {
+            right: 190px;
+            top: 20px;
 
         }
     }
 
     &__list {
-
+        
+        @media (min-width:1024px){
+            padding: 20px 150px 0 150px;
+        }
         &--title {
             font-weight: 300;
         }
@@ -164,8 +186,19 @@
 
     }
 
-    &__list &--button {
+    &--button {
         text-align: center;
         margin-top: 35px;
+
+        @media(min-width:1024px) {
+            padding: 10px 0 30px;
+        }
+    }
+
+    /** MEDIA QUERIES **/
+
+    @media (min-width: 1024px) {
+        width: 73%;
+
     }
 }
