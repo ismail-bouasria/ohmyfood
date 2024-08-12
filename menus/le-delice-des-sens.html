@@ -4,138 +4,224 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OhMyFood</title>
+    <title> Le délice des sens</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="../assets/css/menus.css">
+
 </head>
 
 <body>
     <header>
-        <!-- HOME LOADER-->
-        <div class="loader__container">
-            
-            <i class="fa-solid fa-plate-wheat"></i>
-            <div class="loader__container--dots"></div>
-        </div>
         <div class="logo">
-            <img src="./assets/images/logo/ohmyfood@2x.svg" alt="logo ohmyfood">
-        </div>
-
-        <div class="location">
-            <i class="fa-solid fa-location-dot"></i> Paris, Belleville
+            <a href="../index.html"><i class="fa-solid fa-arrow-left"></i></a>
+            <img src="../assets/images/logo/ohmyfood@2x.svg" alt="logo ohmyfood">
         </div>
     </header>
     <main>
 
-        <!-- SECTION RESERVATION -->
-        <section class="reservation">
-            <h1> Réservez le menu qui vous convient</h1>
-            <p> Découvrez des restaurants d’exception, sélectionnés par nos soins.</p>
-            <a href="#restaurants"> <button class="btn"> Explorer nos restaurants </button> </a>
-        </section>
+        <div class="container__menu">
 
-        <!-- SECTION FONCTIONNEMENT -->
-
-        <section class="functioning">
-
-            <h1> Fonctionnement </h1>
-
-            <div class="functioning__steps">
-                <div> <span>1</span> <i class="fa-solid fa-mobile-screen-button"></i> Choisissez un restaurant </div>
-                <div> <span>2</span> <i class="fa-solid fa-list-ul"></i> Composez votre menu </div>
-                <div> <span>3</span> <i class="fa-solid fa-store"></i> Dégustez au restaurant </div>
+            <div>
+                <img src="../assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                    alt="la palette du goût">
             </div>
 
-        </section>
+            <section class="menu__content" id="menu">
 
-        <!-- SECTION RESTAURANTS -->
+                <h1> Le délice des sens </h1>
+                <div class="menu__content--heart">
+                    <input type="checkbox" id="heartCheckbox2">
+                    <label for="heartCheckbox2"></label>
+                </div>
 
-        <section id="restaurants" class="restaurants">
+                <!-----------------------------ENTRÉES---------------------------------------------->
 
-            <h1>Restaurants</h1>
+                <div class="menu__content__list">
 
-            <div class="restaurants__cards">
-                <a href="./menus/la-palette-du-gout.html">
-                    <article class="restaurants__cards__card restaurants__cards__card--new">
-                        <div>
-                            <img src="./assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-                                alt="La palette du goût">
-                        </div>
+                    <div>
+                        <span class="menu__content__list--title">ENTRÉES</span>
+                        <ul>
+                            <li>
+                                <div class="menu__content__list--name">
+                                    <div>Tartare de thon</div>
+                                    <div> Assaisonné au yuzu</div>
+                                </div>
+    
+                                <div class="menu__content__list--right">
+                                    <div class="menu__content__list--price">
+                                        25€
+                                    </div>
+                                    <input type="checkbox" id="meal1" name="fricassé" value="Fricasse">
+                                    <div class="menu__content__list--check check">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                    </div>
+                                </div>
+    
+                            </li>
+                            <li>
+                                <div class="menu__content__list--name">
+                                    <div>Bouchée de homard croustillant </div>
+                                    <div> Et sa farandole de petits légumes</div>
+                                </div>
+    
+                                <div class="menu__content__list--right">
+                                    <div class="menu__content__list--price">
+                                        35€
+                                    </div>
+                                    <input type="checkbox" id="meal1" name="fricassé" value="Fricasse">
+                                    <div class="menu__content__list--check check">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                    </div>
+                                </div>
+    
+                            </li>
+                            <li>
+                                <div class="menu__content__list--name">
+                                    <div>Poulet rôti aux herbes de Provence </div>
+                                    <div> Et sa crème de truffe </div>
+                                </div>
+    
+                                <div class="menu__content__list--right">
+                                    <div class="menu__content__list--price">
+                                        40€
+                                    </div>
+                                    <input type="checkbox" id="meal1" name="fricassé" value="Fricasse">
+                                    <div class="menu__content__list--check check">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                    </div>
+                                </div>
+    
+                            </li>
+                        </ul>
+                    </div>
+                   
 
-                        <div class="restaurants__cards__card--text">
-                            <div class="restaurants__cards__card--title"> La palette du goût</div>
-                            <div> Ménilmontant</div>
-                        </div>
+                    <!--------------------------------PLATS------------------------------------------->
 
-                        <div class="restaurants__cards__card--heart">
-                            <input type="checkbox" id="heartCheckbox1">
-                            <label for="heartCheckbox1"></label>
-                        </div>
-                    </article>
-                </a>
-                <a href="">
-                    <article class="restaurants__cards__card restaurants__cards__card--new">
-                        <div>
-                            <img src="./assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
-                                alt="La note enchantée">
-                        </div>
+                    <span class="menu__content__list--title">PLATS</span>
+                    <ul>
+                        <li>
+                            <div class="menu__content__list--name">
+                                <div>Poulet rôti aux herbes de Provence </div>
+                                <div> Et sa crème de truffe</div>
+                            </div>
 
-                        <div class="restaurants__cards__card--text">
-                            <div class="restaurants__cards__card--title"> La note enchantée</div>
-                            <div> Charonne</div>
-                        </div>
+                            <div class="menu__content__list--right">
+                                <div class="menu__content__list--price">
+                                    40€
+                                </div>
+                                <input type="checkbox" id="meal1" name="fricassé" value="Fricasse">
+                                <div class="menu__content__list--check check">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                </div>
+                            </div>
 
-                        <div class="restaurants__cards__card--heart">
-                            <input type="checkbox" id="heartCheckbox2">
-                            <label for="heartCheckbox2"></label>
-                        </div>
-                    </article>
-                </a>
-                <a href="">
-                    <article class="restaurants__cards__card">
-                        <div>
-                            <img src="./assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
-                                alt="À la française">
-                        </div>
+                        </li>
+                        <li>
+                            <div class="menu__content__list--name">
+                                <div>Langouste rôtie </div>
+                                <div> Et ses légumes de saison</div>
+                            </div>
 
-                        <div class="restaurants__cards__card--text">
-                            <div class="restaurants__cards__card--title"> À la française</div>
-                            <div> Cité Rouge </div>
-                        </div>
+                            <div class="menu__content__list--right">
+                                <div class="menu__content__list--price">
+                                    35€
+                                </div>
+                                <input type="checkbox" id="meal1" name="fricassé" value="Fricasse">
+                                <div class="menu__content__list--check check">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                </div>
+                            </div>
 
-                        <div class="restaurants__cards__card--heart">
-                            <input type="checkbox" id="heartCheckbox3">
-                            <label for="heartCheckbox3"></label>
-                        </div>
-                    </article>
-                </a>
-                <a href="./menus/le-delice-des-sens.html">
-                    <article class="restaurants__cards__card">
-                        <div>
-                            <img src="./assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-                                alt="Le délice des sens">
-                        </div>
+                        </li>
+                        <li>
+                            <div class="menu__content__list--name">
+                                <div>Côte de bœuf Angus </div>
+                                <div>Et sa purée de panais</div>
+                            </div>
 
-                        <div class="restaurants__cards__card--text">
-                            <div class="restaurants__cards__card--title"> Le délice des sens</div>
-                            <div> Folie-Méricourt</div>
-                        </div>
+                            <div class="menu__content__list--right">
+                                <div class="menu__content__list--price">
+                                    44€
+                                </div>
+                                <input type="checkbox" id="meal1" name="fricassé" value="Fricasse">
+                                <div class="menu__content__list--check check">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                </div>
+                            </div>
 
-                        <div class="restaurants__cards__card--heart">
-                            <input type="checkbox" id="heartCheckbox4">
-                            <label for="heartCheckbox4"></label>
-                        </div>
-                    </article>
-                </a>
-            </div>
-        </section>
+                        </li>
+                    </ul>
 
+                    <!--------------------------------DÉSSERTS---------------------------------------->
+
+                    <span class="menu__content__list--title">DESSERTS</span>
+                    <ul>
+                        <li>
+                            <div class="menu__content__list--name">
+                                <div>Farandole de desserts</div>
+                                <div> Du chef</div>
+                            </div>
+
+                            <div class="menu__content__list--right">
+                                <div class="menu__content__list--price">
+                                    18€
+                                </div>
+                                <input type="checkbox" id="meal1" name="fricassé" value="Fricasse">
+                                <div class="menu__content__list--check check">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li>
+                            <div class="menu__content__list--name">
+                                <div>Crème brulée  </div>
+                                <div>Revisitée </div>
+                            </div>
+
+                            <div class="menu__content__list--right">
+                                <div class="menu__content__list--price">
+                                    22€
+                                </div>
+                                <input type="checkbox" id="meal1" name="fricassé" value="Fricasse">
+                                <div class="menu__content__list--check check">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li>
+                            <div class="menu__content__list--name">
+                                <div>Tiramisu  </div>
+                                <div> À la noisette</div>
+                            </div>
+
+                            <div class="menu__content__list--right">
+                                <div class="menu__content__list--price">
+                                    23€
+                                </div>
+                                <input type="checkbox" id="meal1" name="fricassé" value="Fricasse">
+                                <div class="menu__content__list--check check">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                </div>
+                            </div>
+
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu__content--button">
+                    <a href="#menu"> <button class="btn"> Commander</button> </a>
+                </div>
+            </section>
+
+        </div>
     </main>
-    <!-- FOOTER -->
-    <footer>
 
+
+    <footer>
         <div class="footer__infos">
             <a href=""> <i class="fa-solid fa-utensils"></i> Proposer un restaurant</a>
             <a href=""> <i class="fa-solid fa-handshake-angle"></i> Devenir partenair</a>
