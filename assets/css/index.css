@@ -17,7 +17,7 @@ body {
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
   border-radius: 25px;
   border: none;
-  width: 217px;
+  width: 217px !important;
   height: 50px;
   padding: 15px;
   color: white;
@@ -196,6 +196,10 @@ header .location {
 }
 .reservation p {
   font-weight: 300;
+  font-size: 18px;
+}
+.reservation h1 {
+  font-size: 40px;
 }
 
 /** SECTION FONCTIONNEMENT **/
@@ -209,6 +213,12 @@ header .location {
   display: flex;
   justify-content: center;
   gap: 25px;
+}
+@media (min-width: 1058px) {
+  .functioning__steps {
+    justify-content: start;
+    gap: 30px;
+  }
 }
 .functioning__steps div {
   display: flex;
