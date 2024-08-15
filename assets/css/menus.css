@@ -185,9 +185,21 @@ footer .footer__infos a {
     top: 39px;
   }
 }
+@media (min-width: 768px) {
+  .menu__content--heart {
+    right: 210px;
+    top: 39px;
+  }
+}
 @media (min-width: 1024px) {
   .menu__content--heart {
     right: 190px;
+    top: 20px;
+  }
+}
+@media (min-width: 1440px) {
+  .menu__content--heart {
+    right: 340px;
     top: 20px;
   }
 }
@@ -216,6 +228,7 @@ footer .footer__infos a {
   flex-direction: column;
   gap: 12px;
   padding: 0;
+  padding-bottom: 30px;
   opacity: 0;
   transform: translateY(20px);
   animation: fadeInUp 1s forwards;
@@ -259,6 +272,9 @@ footer .footer__infos a {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  flex: 1;
+  min-width: calc(100% - 67px);
+  transition: min-width 0.2s ease-in;
 }
 .menu__content__list--name div:nth-child(1) {
   font-weight: bold;
@@ -275,6 +291,7 @@ footer .footer__infos a {
   display: flex;
   overflow: hidden;
   border-radius: 0px 15px 15px 0px;
+  width: 60px;
 }
 .menu__content__list--price {
   font-weight: bold;
@@ -288,30 +305,6 @@ footer .footer__infos a {
   align-content: center;
   border-radius: 0px 15px 15px 0px;
   width: 60px;
-  animation: checked 0.2s normal forwards;
-  display: none;
-}
-@keyframes checked {
-  0% {
-    opacity: 0;
-    transform: translateX(60px);
-  }
-  25% {
-    opacity: 0.25;
-    transform: translateX(45px);
-  }
-  50% {
-    opacity: 0.5;
-    transform: translateX(30px);
-  }
-  75% {
-    opacity: 0.75;
-    transform: translateX(15px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0px);
-  }
 }
 .menu__content__list [type=checkbox] {
   position: absolute;
@@ -322,8 +315,8 @@ footer .footer__infos a {
   appearance: none;
   cursor: pointer;
 }
-[type=checkbox]:checked + .menu__content__list--check {
-  display: block;
+.menu__content__list [type=checkbox]:checked + .menu__content__list--name {
+  min-width: calc(100% - 129px);
 }
 .menu__content--button {
   text-align: center;

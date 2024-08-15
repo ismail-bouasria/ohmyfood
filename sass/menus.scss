@@ -60,17 +60,28 @@
     &--heart {
         right: 14px;
         top: 41px;
-
+       
         @media (min-width: 375px) {
             right: 20px;
             top: 39px;
+           
+        }
 
+        @media (min-width: 768px) {
+            right: 210px;
+            top: 39px;
+           
         }
 
         @media (min-width: 1024px) {
             right: 190px;
             top: 20px;
-
+            
+        }
+        @media (min-width: 1440px) {
+            right: 340px;
+            top: 20px;
+            
         }
     }
 
@@ -98,6 +109,7 @@
             flex-direction: column;
             gap: 12px;
             padding: 0;
+            padding-bottom: 30px;
             opacity: 0;
             transform: translateY(20px);
             animation: fadeInUp 1s forwards;
@@ -150,7 +162,9 @@
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
-
+            flex: 1;
+            min-width: calc(100% - 67px);
+            transition: min-width 0.2s ease-in;
 
             div:nth-child(1) {
                 font-weight: bold;
@@ -172,6 +186,7 @@
             display: flex;
             overflow: hidden;
             border-radius: 0px 15px 15px 0px;
+            width: 60px;
         }
 
         &--price {

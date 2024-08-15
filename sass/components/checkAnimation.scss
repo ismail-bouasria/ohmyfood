@@ -8,36 +8,8 @@
     align-content: center;
     border-radius: 0px 15px 15px 0px;
     width: 60px;
-    animation: checked 0.2s normal forwards;
-    display: none;
 }
 
-@keyframes checked {
-    0% {
-        opacity: 0;
-        transform: translateX(60px);
-    }
-
-    25% {
-        opacity: 0.25;
-        transform: translateX(45px);
-    }
-
-    50% {
-        opacity: 0.50;
-        transform: translateX(30px);
-    }
-
-    75% {
-        opacity: 0.75;
-        transform: translateX(15px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateX(0px);
-    }
-}
 
 [type='checkbox'] {
     position: absolute;
@@ -49,6 +21,6 @@
     cursor: pointer;
 }
 
-[type="checkbox"]:checked+&--check {
-    display: block;
+[type="checkbox"]:checked+.menu__content__list--name {
+    min-width: calc(100% - 129px);
 }
