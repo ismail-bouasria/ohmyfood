@@ -10,13 +10,15 @@
         font-size: 1.5rem;
         color: black;
         position: relative;
+        transition: 0.5s;
     }
 
     label::before {
         content: "\f004";
         font-family: "Font Awesome 5 Free";
         font-weight: 100;
-        transition: color 0.3s, transform 0.3s;
+        
+        
     }
 
     [type='checkbox'] {
@@ -31,6 +33,27 @@
         background-clip: content-box;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        transform: scale(1.1);
+        animation: myAnim 1s ease 0s 1 normal forwards;
+    }
+   
+
+    @keyframes myAnim {
+        0% {
+            opacity: 0;
+        }
+        25% {
+            opacity: 0.25;
+        }
+        50% {
+            opacity: 0.50;
+        }
+        75% {
+            opacity: 0.75;
+        }
+    
+        100% {
+            opacity: 1;
+        }
     }
 }
+

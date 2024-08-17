@@ -155,12 +155,12 @@ footer .footer__infos a {
   font-size: 1.5rem;
   color: black;
   position: relative;
+  transition: 0.5s;
 }
 .menu__content--heart label::before {
   content: "\f004";
   font-family: "Font Awesome 5 Free";
   font-weight: 100;
-  transition: color 0.3s, transform 0.3s;
 }
 .menu__content--heart [type=checkbox] {
   appearance: none;
@@ -173,7 +173,24 @@ footer .footer__infos a {
   background-clip: content-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  transform: scale(1.1);
+  animation: myAnim 1s ease 0s 1 normal forwards;
+}
+@keyframes myAnim {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .menu__content--heart {
   right: 14px;
