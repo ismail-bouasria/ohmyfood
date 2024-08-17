@@ -17,13 +17,12 @@ body {
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
   border-radius: 25px;
   border: none;
-  width: 217px !important;
-  height: 50px;
-  padding: 15px;
+  width: 218px !important;
+  height: 50px !important;
+  text-decoration: none;
   color: white;
   font-size: 16px;
   font-weight: 500;
-  cursor: pointer;
   align-content: center;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
@@ -180,7 +179,7 @@ footer .footer__infos a {
     opacity: 0;
   }
   25% {
-    opacity: 0.25;
+    opacity: 0.2;
   }
   50% {
     opacity: 0.5;
@@ -337,7 +336,9 @@ footer .footer__infos a {
 }
 .menu__content--button {
   text-align: center;
-  margin-top: 35px;
+}
+.menu__content--button a {
+  display: inline-block;
 }
 @media (min-width: 1024px) {
   .menu__content--button {

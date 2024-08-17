@@ -17,13 +17,12 @@ body {
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
   border-radius: 25px;
   border: none;
-  width: 217px !important;
-  height: 50px;
-  padding: 15px;
+  width: 218px !important;
+  height: 50px !important;
+  text-decoration: none;
   color: white;
   font-size: 16px;
   font-weight: 500;
-  cursor: pointer;
   align-content: center;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
@@ -44,7 +43,7 @@ body {
   justify-content: center;
   align-items: center;
   z-index: 1;
-  animation: fadeOut 3s ease forwards 1;
+  animation: fadeOut 2s ease forwards 1;
 }
 .loader__container i {
   font-size: 100px;
@@ -193,6 +192,7 @@ header .location {
   flex-direction: column;
   text-align: center;
   padding: 20px;
+  align-items: center;
 }
 .reservation p {
   font-weight: 300;
@@ -319,12 +319,12 @@ header .location {
   font-size: 1.5rem;
   color: black;
   position: relative;
+  transition: 0.5s;
 }
 .restaurants__cards__card--heart label::before {
   content: "\f004";
   font-family: "Font Awesome 5 Free";
   font-weight: 100;
-  transition: color 0.3s, transform 0.3s;
 }
 .restaurants__cards__card--heart [type=checkbox] {
   appearance: none;
@@ -337,7 +337,24 @@ header .location {
   background-clip: content-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  transform: scale(1.1);
+  animation: myAnim 1s ease 0s 1 normal forwards;
+}
+@keyframes myAnim {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @media (min-width: 768px) {
   .restaurants__cards {

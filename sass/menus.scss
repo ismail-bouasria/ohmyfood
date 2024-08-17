@@ -201,9 +201,12 @@
         }
     }
 
-    &--button {
+    &--button  {
+        a{
+            display: inline-block;
+        }
+        
         text-align: center;
-        margin-top: 35px;
 
         @media(min-width:1024px) {
             padding: 10px 0 30px;

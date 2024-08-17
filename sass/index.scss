@@ -26,7 +26,7 @@
     @include dirColumn();
     text-align: $center;
     padding: 20px;
-
+    align-items: center;
     p {
         font-weight: 300;
         font-size: 18px;
@@ -35,6 +35,7 @@
     h1{
         font-size: 40px;
     }
+    
 }
 
 /** SECTION FONCTIONNEMENT **/
