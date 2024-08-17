@@ -272,6 +272,10 @@ header .location {
   width: 100%;
   text-decoration: none;
 }
+.restaurants__cards .card {
+  width: 100%;
+  position: relative;
+}
 .restaurants__cards__card {
   display: flex;
   flex-direction: column;
@@ -344,10 +348,10 @@ header .location {
     opacity: 0;
   }
   25% {
-    opacity: 0.25;
+    opacity: 0.2;
   }
   50% {
-    opacity: 0.5;
+    opacity: 0.45;
   }
   75% {
     opacity: 0.75;
@@ -360,7 +364,7 @@ header .location {
   .restaurants__cards {
     justify-content: center;
   }
-  .restaurants__cards a {
+  .restaurants__cards .card {
     width: 45%;
   }
 }

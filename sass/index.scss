@@ -27,15 +27,16 @@
     text-align: $center;
     padding: 20px;
     align-items: center;
+
     p {
         font-weight: 300;
         font-size: 18px;
     }
 
-    h1{
+    h1 {
         font-size: 40px;
     }
-    
+
 }
 
 /** SECTION FONCTIONNEMENT **/
@@ -117,6 +118,11 @@
             text-decoration: none;
         }
 
+        .card {
+            width: 100%;
+            position: relative;
+        }
+
         &__card {
             @include dirColumn();
             @include gap(15px);
@@ -166,7 +172,7 @@
         &__cards {
             justify-content: center;
 
-            a {
+            .card {
                 width: 45%;
             }
         }
