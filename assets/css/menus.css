@@ -233,21 +233,6 @@ footer .footer__infos a {
   transform: translateY(20px);
   animation: fadeInUp 1s forwards;
 }
-.menu__content__list ul:nth-of-type(1) {
-  animation-delay: 0.5s;
-}
-.menu__content__list ul:nth-of-type(2) {
-  animation-delay: 1s;
-}
-.menu__content__list ul:nth-of-type(3) {
-  animation-delay: 1.5s;
-}
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 .menu__content__list li {
   background-color: white;
   border-radius: 15px;
@@ -317,6 +302,21 @@ footer .footer__infos a {
 }
 .menu__content__list [type=checkbox]:checked + .menu__content__list--name {
   min-width: calc(100% - 129px);
+}
+.menu__content__list > ul:nth-of-type(1) {
+  animation-delay: 0.5s;
+}
+.menu__content__list > ul:nth-of-type(2) {
+  animation-delay: 1s;
+}
+.menu__content__list > ul:nth-of-type(3) {
+  animation-delay: 1.5s;
+}
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 .menu__content--button {
   text-align: center;
